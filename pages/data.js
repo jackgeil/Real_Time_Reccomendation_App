@@ -12,7 +12,7 @@ var api = new SingleStoreClient.HttpApi();
 export default function handler(req, res) {
     api.rows({
         queryInput: {
-            database: 'r2_d2_db',  // Replace with your database name
+            database: 'r2_d2_db',  // Replace with your actual database name
             sql: 'SELECT * FROM purchases LIMIT 200;'  // Replace with your actual SQL query
         }
     }).then(dbResponse => {
